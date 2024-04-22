@@ -1,0 +1,135 @@
+/* Import Google Fonts stylesheet for the "Gochi Hand" font */
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+/* Style the body of the webpage */
+body {
+    background-color: #f0f0f0; /* Set background color */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333; /* Text color */
+    font-family: 'Gochi Hand', cursive; /* Font family */
+}
+
+/* Adjust the body height based on screen width */
+@media only screen and (min-width: 500px) {
+    body {
+        min-height: 100vh; /* Full viewport height for larger screens */
+    }
+}
+
+/* Style the container element */
+.container {
+    width: 100%;
+    max-width: 500px; /* Maximum width */
+    min-width: 300px; /* Minimum width */
+    background-color: #fff; /* Background color */
+    border-radius: 10px; /* Border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    padding: 20px;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);
+}
+
+/* Style the heading container */
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the heading title */
+.heading__title {
+    transform: rotate(-5deg); /* Rotate title */
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffde59; /* Background color */
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Adjust font size based on screen width */
+@media only screen and (min-width: 500px) {
+    .heading__title {
+        font-size: 2rem; /* Larger font size */
+    }
+}
+
+/* Style form labels */
+.form__label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Style form input fields */
+.form__input {
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Focus state of form input fields */
+.form__input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Adjust input field width based on screen width */
+@media only screen and (min-width: 500px) {
+    .form__input {
+        width: 90%;
+    }
+}
+
+/* Style button element */
+.button {
+    padding: 10px 20px;
+    font-family: 'Gochi Hand', cursive;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style button text */
+.button span {
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+/* Style button when active or focused */
+.button:active, .button:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+/* Style to-do list */
+.toDoList {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+/* Style individual list items */
+.toDoList li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style list items when hovered */
+.toDoList li:hover {
+    text-decoration: line-through wavy;
+    color: #ff6347; /* Change color */
+}
